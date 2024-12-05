@@ -1,4 +1,3 @@
-#!/usr/bin python3
 # Advent of Code Day 1 - Puzzle 1
 
 with open('input.txt', 'r') as f:
@@ -12,7 +11,7 @@ with open('input.txt', 'r') as f:
         right.append(int(x[1]))
 
     for i in left:
-        frequency = right.count(i)
-        sim += i * frequency
+        freq = right.count(i)
+        sim += i * freq
 
-    print(sim)
+    print("S:", sim)
