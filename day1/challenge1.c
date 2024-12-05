@@ -1,6 +1,6 @@
+// Advent of Code Day 1 - Puzzle 1
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 #define ELEMENTS 1000
 
@@ -16,10 +16,10 @@ int main(void) {
     input = fopen("input.txt", "r");
 
     int bufl, bufr;
-    int count = 0;
     int left[ELEMENTS];
     int right[ELEMENTS];
 
+    int count = 0;
     while (fscanf(input, "%d%d", &bufl, &bufr) != EOF) {
         left[count] = bufl;
         right[count] = bufr;
@@ -28,10 +28,6 @@ int main(void) {
 
     qsort(left, ELEMENTS, sizeof(int), compare);
     qsort(right, ELEMENTS, sizeof(int), compare);
-
-    // for (int i; i < ELEMENTS; i++) {
-    //     printf("L[%d] = %d\n", i, left[i]);
-    // }
 
     int dist = 0;
     for (int i; i < ELEMENTS; i++) {
