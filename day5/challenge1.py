@@ -28,7 +28,7 @@ with open('input.txt', 'r') as f:
 
         cache: str = ""
         invalid: bool = False
-        for i, k in zip(range(len(z)), z):
+        for k in z:
             before = []
             try:
                 before = ref[k]
