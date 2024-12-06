@@ -39,8 +39,6 @@ with open('input.txt', 'r') as f:
                if str(b) in cache:
                 invalid = True
 
-            # print(k, "needs to come before", before)
-            # print('cache:', cache)
             cache += k + ','
         print('inv:', invalid)
 
